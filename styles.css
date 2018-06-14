@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: Lobster;
+  font-size: 70px;
+  margin: 0.2em;
+  text-transform: lowercase;
+}
+
+h2 {
+  margin: 1.2em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+table, tr, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+input[type="number"] {
+  width: 6em;
+}
