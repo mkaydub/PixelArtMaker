@@ -8,19 +8,21 @@
 </head>
 
 <body>
+    <!-- This is the header --> 
     <h1>Lab: Pixel Art Maker</h1>
-
+    <!-- This is the subhead --> 
     <h2>Choose Grid Size</h2>
+    <!-- This is the form for grid creation based on rows and columns user input-->
     <form id="sizePicker">
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:
         <input type="number" id="inputWidth" name="width" min="1" value="1">
         <input type="submit">
     </form>
-
+    <!-- This is the color picker for the user to select a color to draw with --> 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
-
+    <!-- This is a the design canvas (or the grid) where the user can click to make art --> 
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>
 
