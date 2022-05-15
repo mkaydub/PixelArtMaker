@@ -1,12 +1,16 @@
+// These are the relevant variables within this program.
 const size = document.getElementById('sizePicker');
 const button = document.getElementById('createGrid');
 const table = document.getElementById('pixelCanvas');
 
 
+//This clears the grid 
 function clearGrid() {
   table.innerHTML = '';
 }
 
+// When the user adds rows and columns via the form, 
+// the program creates a grid with those rows and columns. 
 size.addEventListener('submit', function(makeGrid) {
   makeGrid.preventDefault();
   clearGrid();
@@ -25,6 +29,8 @@ size.addEventListener('submit', function(makeGrid) {
 
 });
 
+// When the user selects a color in the color picker,
+// the program applies that color to the target click.
 table.addEventListener('click', function(event) {
   const color = document.getElementById('colorPicker').value;
   event.target.style.backgroundColor = color;
